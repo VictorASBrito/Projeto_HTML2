@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1e23;
+}
+
+/* Barra de Navegação */
+
+
+header {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  background-color: #000000;
+  border-bottom: solid white 1px;
+  height: 90px;
+  width: full;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.navBarList {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+}
+
+.logo {
+  margin-top: 8px;
+  display: flex;
+  width: 48px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 160px;
+  height: 62px;
+}
+
+.link:link,
+.link:visited {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+.link:hover,
+.link:active {
+  background-color: white;
+  color: black;
+}
+
+/*HOME*/
+
+.home-container {
+  padding: 20px;
+  height: fit-content;
+}
+
+.home-container-contato {
+  padding: 20px;
+  height: 100vh;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.home-image {
+  width: 772px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: solid;
+  border-color: white;
+
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-products-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  height: auto;
+}
+
+.home-product-item {
+  border: 3px solid white;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+.home-product-item header {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.home-product-image {
+  border-radius: 8px;
+  width: 345px;
+  height: 145px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.home-product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*galeria*/
+.galery-product-item {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px;
+  background: black;
+  border: 3px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  border-radius: 8px;
+  justify-self: center;
+  align-self: center;
+  gap: 24px;
+  transition: 1s;
+}
+
+.galery-product-item span {
+  font-weight: bold;
+}
+
+.galery-product-item img {
+  width: 192px;
+  height: 141px;
+  border-radius: 4px;
+}
+
+.galery-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+
+/* contato */
+
+.contact-container{
+  color: white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:32px;
+  padding:20px;
+}
+.contact-container h1{
+text-align:left;
+}
+.contact-forms-container {
+  width:500px;
+  height:fit-content;
+  display:flex;
+  justify-self: center;
+  align-self: center;
+  flex-direction:column;
+  gap:24px;
+  align-items:center;
+  background: black;
+  border: white solid 2px;
+
+}
+.contact-forms-container section{
+  display:flex;
+  gap:24px;
+}
+.footer-contact-section{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  width:386px;
+}
+.contact-forms-container button{
+  width:75px;
+  height:2rem;
+}
+#message{
+  width:full;
+  height:100px;
+}
+.separed-section-forms{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+/*blog*/
+
+.blog-text{
+  font-size: 50px;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 20px;
+  color: white;
+}
+
+.blog-container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.blog-item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: black;
+  border: white solid 1px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.blog-item header {
+  display: block;
+}
+
+.blog-item img {
+  width: 345px;
+  height: 145px;
+  margin-top: 10px;
+  background: black;
+  border: white solid 1px;
+  border-radius: 8px;
+}
+
+/* footer */
+
+.main-footer {
+  padding: 20px 0 20px 0;
+  background: black;
+  border-top: solid white 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-footer span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
